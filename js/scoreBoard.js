@@ -15,7 +15,6 @@ export default class Scoreboard{
         this.reset.addEventListener('click', (e) => this.reload(e));
 
 
-
         this.startGame.addEventListener('click', (e) => {
             this.addListItem(e);
             gc.createName(e);
@@ -96,7 +95,7 @@ export default class Scoreboard{
         this.getTotal();
     }
 
-    reload(e){
+    reload(){
         location.reload();
     }
 
